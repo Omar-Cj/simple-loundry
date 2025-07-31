@@ -1,6 +1,6 @@
-# Laundry Management System - Frontend
+#  Simple Laundry Management System -
 
-A modern, responsive frontend for the Laundry Management System built with vanilla JavaScript, Bootstrap 5, and Vite.
+A modern, responsive system for the Laundry Management built with vanilla JavaScript, Bootstrap 5, and Vite on the frontend and Python/Django on the Backend API's 
 
 ## Features
 
@@ -30,7 +30,7 @@ A modern, responsive frontend for the Laundry Management System built with vanil
 - **Loading Overlays**: User-friendly loading states
 - **Animations**: Smooth transitions and micro-interactions
 
-## Tech Stack
+## Frontend Stack
 
 - **Framework**: Vanilla JavaScript (ES6+ modules)
 - **Build Tool**: Vite 7.0.4
@@ -52,7 +52,7 @@ src/
     └── order-manager.js  # Order creation and editing component
 ```
 
-## Quick Start
+## Frontend Setup
 
 ### Prerequisites
 - Node.js (v14 or higher)
@@ -93,6 +93,39 @@ The frontend communicates with a Django REST API backend with the following endp
 - `POST /api/items/` - Create new item
 - `PATCH /api/items/{id}/` - Update item
 - `DELETE /api/items/{id}/` - Delete item
+
+
+
+## Backend Setup
+
+### Prerequisites
+- MySQL database Engine
+
+### Installation
+
+1. Install dependencies:
+```cd backend/
+pipenv install
+```
+
+2. Migrate Database
+
+``` cd backend/
+
+   python manage.py migrate
+
+   note:- make sure your virtual environment is activated if not run this command.
+
+   cd backend/
+
+   pipenv shell 
+```
+
+3. Start development server:
+```
+python manage.py runserver
+```
+
 
 ## Order Status Flow
 
