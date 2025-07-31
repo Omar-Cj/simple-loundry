@@ -20,6 +20,12 @@ export class ApiService {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             
+            // Handle empty responses (like DELETE 204)
+            const contentType = response.headers.get('content-type');
+            if (response.status === 204 || !contentType || !contentType.includes('application/json')) {
+                return null;
+            }
+            
             return await response.json();
         } catch (error) {
             console.error('API request failed:', error);
