@@ -8,8 +8,9 @@ django = "*"
 djangorestframework = "*"
 mysqlclient = "*"
 django-cors-headers = "*"
-dj-database-url = "*"
+whitenoise = "*"
 gunicorn = "*"
+dj-database-url = "*"
 
 [dev-packages]
 
