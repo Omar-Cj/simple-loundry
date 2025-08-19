@@ -1,6 +1,7 @@
 Django>=5.2.0
 djangorestframework
 PyMySQL
+cryptography
 django-cors-headers
 whitenoise
 gunicorn
