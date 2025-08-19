@@ -10,7 +10,7 @@ django-cors-headers = "*"
 whitenoise = "*"
 gunicorn = "*"
 dj-database-url = "*"
-mysqlclient = "*"
+pymysql = "*"
 
 [dev-packages]
 

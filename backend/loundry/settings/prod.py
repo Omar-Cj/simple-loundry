@@ -1,6 +1,10 @@
 from .common import *
 import os
 import dj_database_url
+import pymysql
+
+# Install PyMySQL as MySQLdb for compatibility with Django
+pymysql.install_as_MySQLdb()
 
 
 
