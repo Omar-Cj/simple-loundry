@@ -1,7 +1,0 @@
-Django>=5.2.0
-djangorestframework
-mysqlclient
-django-cors-headers
-whitenoise
-gunicorn
-dj-database-url
