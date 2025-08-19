@@ -15,5 +15,15 @@ DATABASES = {
 
 
 
+# Static files configuration for Railway
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 # WhiteNoise configuration
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# Production CORS settings
+CORS_ALLOWED_ORIGINS = [
+    "https://your-frontend-domain.com",  # Replace with your actual frontend domain
+]
+
+CORS_ALLOW_CREDENTIALS = True
