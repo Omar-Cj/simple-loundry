@@ -21,8 +21,7 @@ DATABASES = {
 
 
 
-# Static files configuration for Railway
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 
 # WhiteNoise configuration
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
