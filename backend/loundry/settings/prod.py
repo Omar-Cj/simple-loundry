@@ -12,7 +12,7 @@ DEBUG = False
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
-ALLOWED_HOSTS = ['simple-loundry-production.up.railway.app']
+ALLOWED_HOSTS = ['*']
 
 # Database configuration for Railway
 DATABASES = {
